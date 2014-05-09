@@ -1,0 +1,9 @@
+<article>
+  <p class="date">{{ page.date | date_to_long_string }}</p>
+  <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
+  <div>
+      {{ content }}
+  </div>
+
+  {% include JB/comments %}
+</article>
